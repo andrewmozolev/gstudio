@@ -1,0 +1,31 @@
+html
+  box-sizing border-box
+  min-width break-mobile
+
+
+*,
+*::before,
+*::after
+  box-sizing inherit
+
+
+.container
+  margin 0 auto
+  min-width break-mobile
+  max-width break-desktop
+  padding-left offset-mobile
+  padding-right offset-mobile
+
+  @media tablet
+    padding-left offset-tablet
+    padding-right offset-tablet
+
+
+body
+  background-color #fff
+  font-family Geometria, Arial, sans-serif
+  font-style normal
+  font-size: $fz_base;
+  font-weight 400
+  line-height 1.5
+  color: #000;

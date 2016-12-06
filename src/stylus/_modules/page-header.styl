@@ -1,0 +1,151 @@
+.page-header
+  position fixed
+  z-index 1000
+  width 100%
+  color #fff
+
+  &--sticky
+    background-color #fff
+    color #000
+    transition all 0.3s
+
+    .page-header__btn-burger span
+      background-color #000
+
+      &::before,
+      &::after
+        background-color #000
+
+    .page-header__logo
+      margin-right 24px
+      margin-left 0
+      opacity 1
+
+      @media tablet
+        margin-right 34px
+
+      @media laptop
+        margin-right 55px
+
+      @media desktop
+        margin-right 50px
+
+
+  &--open
+    background-color #fff
+    color #000
+    transition none
+
+
+  &__inner
+    display flex
+    justify-content space-between
+    align-items center
+    min-height 59px
+
+    @media tablet
+      min-height 80px
+
+
+  &__buttons
+    display flex
+    align-items center
+
+
+  &__logo
+    margin-left -30px
+    opacity 0
+    transition all 0.3s
+
+    @media tablet
+      margin-left -30px
+    @media laptop
+      margin-left -20px
+
+
+  &__btn-burger
+    position relative
+    width 30px
+    height 30px
+    cursor pointer
+
+    @media laptop
+      display none
+
+    span
+      position absolute
+      top 50%
+      left 0
+      display block
+      width 30px
+      height 1px
+      background-color #fff
+      transition all 0.3s
+
+      &::before,
+      &::after
+        position absolute
+        content ''
+        left 0
+        width 30px
+        height 1px
+        background-color #fff
+        transition all 0.3s
+
+      &::before
+        top -8px
+
+      &::after
+        top 8px
+
+
+  & &__btn-burger--open span
+    background-color transparent
+
+    &::before,
+    &::after
+      top 0
+      background-color #000
+
+    &::before
+      transform rotate(45deg);
+
+    &::after
+      transform rotate(-45deg);
+
+
+  &__links
+    display block
+
+
+  &__phone-link
+    color inherit
+    font-size fz_xsmall
+    text-decoration none
+
+    &:hover
+      opacity 0.7
+
+    &:active
+      opacity 0.5
+
+    @media tablet
+      display none
+
+  &__calc-link
+    display none
+    font-size fz_small
+    font-weight 500
+    color inherit
+
+    &:hover
+      opacity 0.7
+
+    &:active
+      opacity 0.5
+
+    @media tablet
+      display block
+
+
+

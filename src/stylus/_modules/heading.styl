@@ -1,0 +1,225 @@
+.heading
+  position relative
+  width 100%
+  height 100vh
+  min-height 500px
+  padding-left 5px
+  padding-right 5px
+  padding-bottom 80px
+  background-image url(../img/bg_main-mobile.jpg)
+  background-repeat no-repeat
+  background-size cover
+  background-position 50% 50%
+
+  @media retina1-5x
+    background-image url(../img/bg_main-mobile@1,5x.jpg)
+
+  @media retina2x
+    background-image url(../img/bg_main-mobile@2x.jpg)
+
+  @media retina3x
+    background-image url(../img/bg_main-mobile@3x.jpg)
+
+  @media tablet
+    min-height 768px
+    padding-left 30px
+    padding-right 30px
+    background-image url(../img/bg_main-tablet.jpg)
+
+    @media retina1-5x
+      background-image url(../img/bg_main-tablet@1,5x.jpg)
+
+    @media retina2x
+      background-image url(../img/bg_main-tablet@2x.jpg)
+
+    @media retina3x
+      background-image url(../img/bg_main-tablet@3x.jpg)
+
+  @media desktop
+    min-height 1000px
+    background-position top 100px
+    background-image url(../img/bg_main-desktop.jpg)
+
+    @media retina1-5x
+      background-image url(../img/bg_main-desktop@1,5x.jpg)
+
+    @media retina2x
+      background-image url(../img/bg_main-desktop@2x.jpg)
+
+    @media retina3x
+      background-image url(../img/bg_main-desktop@3x.jpg)
+
+
+  &__inner
+    padding-top 105px
+    text-align center
+    color #fff
+
+    @media tablet
+      padding-top 156px
+
+    @media desktop
+      padding-top 237px
+
+
+  &__logo
+    margin-bottom 12px
+
+    @media tablet
+      width 134px
+      height 135px
+      margin-bottom 21px
+
+    @media desktop
+      width 164px
+      height 165px
+      margin-bottom 35px
+
+
+  &__title
+    margin-top 0
+    margin-bottom 28px
+    margin-left auto
+    margin-right auto
+    max-width 320px
+    padding 0
+    font-size fz_xmedium
+    font-weight 800
+    line-height calc(24/23)
+
+    @media tablet
+      margin-bottom 30px
+      max-width none
+      font-size fz_xlarge
+      line-height calc(50/48)
+
+      span
+        display block
+
+    @media laptop
+      font-size fz_xxlarge
+      line-height calc(50/52)
+
+    @media desktop
+      margin-bottom 50px
+      font-size fz_xxxlarge
+      line-height calc(70/72)
+
+
+  &__platforms
+    margin-bottom 6px
+    font-size 0
+
+    @media tablet
+      display none
+
+
+  &__platform
+    display inline-block
+    margin-right 24px
+    font-size 0
+
+    &:last-child
+      margin 0
+
+  &__platform-svg
+    fill #fff
+
+
+  &__sub-title
+    margin-top 0
+    font-size fz_xxxsmall
+    line-height calc(16/10)
+    text-transform uppercase
+    font-weight 500
+
+    @media tablet
+      margin-bottom 20px
+      font-size fz_xsmall
+      line-height calc(22/14)
+
+    @media laptop
+      font-size fz_small
+      line-height calc(22/16)
+
+    @media desktop
+      margin-bottom 30px
+      font-size fz_base
+      line-height calc(30/18)
+
+
+    span
+      display block
+
+      @media tablet
+        display inline
+
+        &::after
+          content '—'
+
+
+  &__text
+    display none
+
+    @media tablet
+      display inline-block
+      margin-top 0
+      max-width 660px
+      font-size fz_small
+      line-height calc(22/16)
+      font-weight 500
+
+    @media desktop
+      font-size fz_medium
+      line-height calc(30/20)
+
+
+  &__footer
+    position absolute
+    bottom 40px
+    left 0
+    width 100%
+
+    @media tablet
+      bottom 30px
+      display flex
+      justify-content space-between
+      align-items center
+      text-align left
+      padding-left 60px
+      padding-right 60px
+
+  &__calc
+    @media tablet
+      display none
+
+
+  &__calc-link
+    font-size fz_xsmall
+    line-height calc(30/14)
+    font-weight 500
+    color #fff
+
+
+  &__address
+    display none
+
+    @media tablet
+      display block
+      font-size fz_xsmall
+      line-height calc(20/14)
+      font-weight 500
+
+
+  &__phone
+    display none
+    font-size fz_small
+    line-height calc(30/16)
+
+    @media tablet
+      display block
+
+    @media desktop
+      font-size fz_base
+      line-height calc(30/18)
+

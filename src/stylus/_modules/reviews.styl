@@ -1,0 +1,43 @@
+.reviews
+  overflow-x auto
+
+  &__wrap
+    display flex
+    padding-top 30px
+    padding-bottom 30px
+    padding-left 20px
+    padding-right 20px
+
+    @media tablet
+      padding-top 80px
+      padding-bottom 80px
+      padding-left 30px
+      padding-right 30px
+
+    @media laptop
+      padding-left 60px
+      padding-right 60px
+
+    @media desktop
+      padding-top 100px
+
+
+  &__item
+    display flex
+    flex-shrink 0
+    width 220px
+    margin-right 30px
+
+    &:last-child
+      margin-right 0
+
+    @media tablet
+      width 250px
+      margin-right 80px
+
+    @media laptop
+      margin-right 140px
+
+    @media desktop
+      margin-right 170px
+

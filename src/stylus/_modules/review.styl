@@ -1,0 +1,87 @@
+.review
+  position relative
+  margin 0
+  padding-bottom 24px
+  cursor default
+
+  @media tablet
+    padding-left 10px
+
+
+  &__img
+    width 80px
+    height 80px
+    border-radius 50%
+
+    @media tablet
+      position relative
+      left -10px
+      width 100px
+      height 100px
+      margin-bottom 27px
+
+
+  &__author
+    display block
+    margin-bottom 4px
+    font-size fz_small
+    line-height calc(26/16)
+    font-weight 500
+    font-style normal
+    letter-spacing 0.44px
+
+    @media tablet
+      margin-bottom 7px
+      font-size fz_base
+      line-height calc(26/18)
+      letter-spacing 0.5px
+
+
+  &__description
+    min-height 28px
+    margin-top 0
+    margin-bottom 14px
+    font-size fz_xxxsmall
+    line-height calc(14/10)
+    font-weight 400
+    letter-spacing 0.28px
+
+    @media tablet
+      min-height 36px
+      margin-bottom 23px
+      font-size fz_xxsmall
+      line-height calc(18/12)
+      letter-spacing 0.33px
+
+
+  &__text
+    font-size fz_xxxsmall
+    line-height calc(24/10)
+    font-weight 400
+
+    @media tablet
+      font-size fz_xsmall
+      line-height calc(24/14)
+
+
+  &__link
+    position absolute
+    bottom 0
+    font-size fz_xxxsmall
+    line-height calc(24/10)
+    color c-link
+    text-decoration none
+
+    &:hover
+      opacity 0.7
+
+    &:active
+      opacity 0.5
+
+    @media tablet
+      font-size fz_xsmall
+      line-height calc(24/14)
+
+
+
+
