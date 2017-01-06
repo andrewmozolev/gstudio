@@ -151,7 +151,14 @@ gulp.task('webpack', function() {
     .pipe(plumber({
       errorHandler: notify.onError('Error: <%= error.message %>')
     }))
-    .pipe(webpack())
+    .pipe(webpack({
+      module: {
+        loaders: [{
+          test: /\.js$/,
+          loader: 'babel-loader?presets[]=es2015'
+        }]
+      }
+    }))
     .pipe(uglify())
     .pipe(rename('scripts.min.js'))
     .pipe(gulp.dest(buildPath + '/js'))

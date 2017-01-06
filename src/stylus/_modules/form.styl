@@ -1,0 +1,73 @@
+.form
+  &__textarea
+    width 100%
+    max-width 100%
+    min-height 68px
+    margin-bottom 20px
+    padding 7px
+    background-color #000
+    color c-input
+    outline none
+    border 1px solid #fff
+    font-size fz_xx2small
+    line-height calc(12/11)
+    placeholder(#fff, 0.5)
+    transition all 0.2s
+
+    &:focus
+      border-color c-input-light
+
+    @media tablet
+      min-height 137px
+      padding 15px
+      font-size fz_base
+      line-height calc(24/18)
+
+  &__wrap
+    display flex
+    justify-content space-between
+
+
+  &__input
+    flex-grow 1
+    margin-right 19px
+    padding 7px
+    background-color #000
+    color c-input
+    outline none
+    border none
+    border-bottom 1px solid #fff
+    font-size fz_xx2small
+    line-height calc(12/11)
+    placeholder(#fff, 0.5)
+    transition all 0.2s
+
+    &:focus
+      border-color c-input-light
+
+    @media tablet
+      font-size fz_base
+      line-height calc(24/18)
+
+  &__btn
+    padding 0
+    outline none
+    border none
+    color c-input-dark
+    text-transform uppercase
+    background-color transparent
+    font-size fz_xx2small
+    line-height calc(12/11)
+    letter-spacing 1.22px
+    cursor pointer
+
+    &:hover
+      color c-input-light
+
+    &:active
+      color c-input
+
+    @media tablet
+      font-size fz_base
+      line-height calc(24/18)
+      letter-spacing 2px

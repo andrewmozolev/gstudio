@@ -1,5 +1,17 @@
-.partners
+.clients
   padding-top 30px
+  padding-bottom 20px
+  background-color #fff
+
+  @media tablet
+    padding-bottom 44px
+
+  @media laptop
+    padding-bottom 50px
+
+  @media desktop
+    padding-bottom 60px
+
 
   &__title
     width 240px
@@ -26,26 +38,29 @@
 
   &__wrap
     position relative
-    overflow-x auto
-    margin-bottom 20px
+    height 60px
+    overflow hidden
+
+    &--touch
+      overflow-x scroll
 
     @media tablet
-      margin-bottom 44px
-
-    @media laptop
-      margin-bottom 50px
+      height 113px
 
     @media desktop
-      margin-bottom 60px
+      height 150px
 
 
   &__list
-    position relative
+    position absolute
     display flex
     justify-content space-between
+    align-items center
     margin 0
-    padding 0
+    padding-left 20px
+    padding-right 20px
     list-style none
+    transition left 0.3s ease-out
 
 
   &__item

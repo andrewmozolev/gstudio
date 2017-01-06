@@ -1,0 +1,179 @@
+.page-footer
+  padding-top 50px
+  padding-bottom 30px
+  background-color #000
+  color #fff
+
+  @media tablet
+    padding-top 70px
+    padding-bottom 42px
+
+  @media laptop
+    padding-top 100px
+    padding-bottom 105px
+
+  @media desktop
+    padding-top 222px
+    padding-bottom 130px
+
+
+  &__title
+    margin 0
+    margin-bottom 32px
+    font-size fz_small
+    line-height calc(22/16)
+    font-weight 300
+    text-transform uppercase
+    letter-spacing 2.33px
+
+    @media tablet
+      margin-bottom 60px
+      text-align center
+      font-size fz_xxmedium
+      line-height calc(62/24)
+      letter-spacing 3.5px
+
+    @media laptop
+      margin-bottom 54px
+
+    @media desktop
+      margin-bottom 130px
+      font-size fz_large
+      line-height calc(62/36)
+      letter-spacing 5.25px
+
+
+  &__wrap
+    margin-bottom 40px
+
+    @media tablet
+      margin-bottom 134px
+
+    @media laptop
+      display flex
+      justify-content space-between
+      margin-bottom 104px
+
+    @media desktop
+      margin-bottom 90px
+
+
+  &__content
+    margin-bottom 40px
+
+    @media tablet
+      display flex
+      justify-content space-between
+      margin-bottom 110px
+
+    @media laptop
+      flex-grow 1
+      margin-bottom 0
+      margin-right 83px
+
+    @media desktop
+      flex-grow 0
+      width 45%
+      margin-right 0
+
+  &__form
+    @media laptop
+      width 50%
+
+    @media desktop
+      width 45%
+
+  &__text
+    margin 0
+    margin-bottom 24px
+    padding 0
+    font-size fz_xsmall
+    line-height calc(24/14)
+
+    @media tablet
+      margin-bottom 28px
+      font-size fz_base
+      line-height calc(28/18)
+
+    @media laptop
+      font-size fz_small
+      line-height calc(28/16)
+
+    @media desktop
+      font-size fz_base
+      line-height calc(28/18)
+
+
+  &__link
+    color #fff
+    text-decoration none
+
+    &:hover
+      text-decoration underline
+
+
+  &__social
+    color #fff
+
+    &::after
+      content ','
+
+    &:last-child::after
+      display none
+
+    &:hover
+      text-decoration underline
+
+
+    @media tablet
+      display block
+      text-decoration none
+
+      &::after
+        display none
+
+
+  &__tag
+    display block
+
+
+  &__bottom
+    @media tablet
+      text-align center
+
+
+  &__logo
+    display inline-block
+    vertical-align top
+    margin-bottom 30px
+
+    @media tablet
+      margin-bottom 25px
+
+    @media desktop
+      margin-bottom 60px
+
+
+  &__logo-svg
+    width 60px
+    height 60px
+
+    @media tablet
+      width 80px
+      height 80px
+
+    @media desktop
+      width 120px
+      height 120px
+
+
+  &__copyright
+    margin 0
+    font-size fz_xxxsmall
+    line-height calc(24/10)
+    color rgba(255,255,255,0.3)
+
+    @media tablet
+      font-size fz_xxsmall
+      line-height calc(24/12)
+

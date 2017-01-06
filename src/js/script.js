@@ -1,7 +1,9 @@
 'use strict';
 
-require ('./modules/menu.js');
-require ('./modules/heading.js');
+require ('./modules/menu');
+require ('./modules/clients');
+require ('./modules/reviews');
 
-const svg4everybody = require ('./lib/svg4everybody.min.js');
+let svg4everybody = require ('./lib/svg4everybody.min.js');
 svg4everybody();
+
